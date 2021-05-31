@@ -46,14 +46,14 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="src/img/carrossel-img1.jpg" class="d-block w-100 imagem-carrossel" alt="...">
-              <div class="carousel-caption d-none d-md-block h-50">
-                <h5 class="fonte-titulo display-4">Precisa organizar a sua casa?</h5>
+              <div class="carousel-caption d-md-block h-50">
+                <h1 class="fonte-titulo display-5">Precisa organizar a sua casa?</h1>
               </div>
             </div>
             <div class="carousel-item">
               <img src="src/img/carrossel-img2.jpg" class="d-block w-100 imagem-carrossel" alt="...">
-              <div class="carousel-caption d-none d-md-block h-50">
-                <h5 class="fonte-titulo display-4">Encontrar o que você precisa será mais fácil!</h5>
+              <div class="carousel-caption d-md-block h-50">
+                <h1 class="fonte-titulo display-5">Encontre o que você precisa facilmente!</h1>
               </div>
             </div>
           </div>
@@ -83,7 +83,7 @@
             <div class="card-body">
               <h5 class="card-title">Armário de Cozinha</h5>
               <p class="card-text">Taças de Vinho, copos, pratos e talheres, equipamentos mais utilizados!</p>
-              <a href="#" class="btn botao-cor-especial">Veja a imagem</a>
+              <a href="#" class="btn botao-cor-especial"  data-toggle="modal" data-target="#modal-image">Veja a imagem</a>
             </div>
           </article>
             
@@ -149,6 +149,40 @@
     </footer>
 
   <!-- Modal -->
+  <!-- Modal image-->
+  <div class="modal fade" 
+             id="modal-image"
+             tabindex="-1" 
+             role="dialog"
+             aria-labelledby="exampleModalLabel" 
+             aria-hidden="true">
+            <div class="modal-dialog" 
+                 role="document">
+                <div class="modal-content">
+                    <!-- Modal heading -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" 
+                            id="exampleModalLabel">
+                          Organizado
+                      </h5>
+                        <button type="button" 
+                                class="close"
+                                data-dismiss="modal" 
+                                aria-label="Close">
+                            <span aria-hidden="true">
+                              ×
+                          </span>
+                        </button>
+                    </div>
+  
+                    <!-- Modal body with image -->
+                    <div class="modal-body">
+                        <img src="src/img/organizado-cozinha.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
   <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">

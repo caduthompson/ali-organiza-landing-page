@@ -17,25 +17,50 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<!--       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <a class="navbar-brand" href="https://www.instagram.com/ali.organiza/" target="_blank">
-            <img src="src/img/aliorganiza.png" alt="" width="70" height="70" class="d-inline-block align-text-center"></a>
+            <img src="src/img/aliorganiza.png" alt="" width="90" height="90" class="d-inline-block align-text-center"></a>
             <button class ="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <ul class="navbar-nav">
               <li><a class="nav-item nav-link active" href="#">início<span class="sr-only">(current)</span></a></li>
+              <li><a class="nav-item nav-link" href="#about">sobre mim</a></li>
               <li><a class="nav-item nav-link" href="#organizacoes">organizações</a></li>
-              <li><a class="nav-item nav-link" href="#about">quem somos</a></li>
-              <li><a class="nav-item nav-link"  data-toggle="modal" data-target="#modal-contato">contato</a></li>
+              <li><a class="nav-item nav-link"  data-toggle="modal" data-target="#modal-contato">contacto</a></li>
             </ul>
           </div>
+      </nav> -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="https://www.instagram.com/ali.organiza/" target="_blank">
+          <img src="src/img/aliorganiza.png" alt="" width="90" height="90" class="d-inline-block align-text-center">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">início<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">sobre mim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#organizacoes">organizações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="modal" data-target="#modal-contato">contacto</a>
+            </li>
+          </ul>
+         </div>
       </nav>
     </header>
 
     <main>
-      <section class="carroussel">
+      <section class="carousel">
         <div id="carouselExampleCaptions" class="carousel slide" data-interval="3000" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -43,13 +68,13 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="src/img/carrossel-img1.jpg" class="d-block w-100 imagem-carrossel" alt="...">
+              <img src="src/img/carousel-img1.jpg" class="d-block w-100 imagem-carrossel" alt="...">
               <div class="carousel-caption d-md-block h-50">
                 <h1 class="fonte-titulo display-5">Precisa organizar a sua casa?</h1>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="src/img/carrossel-img3.jpg" class="d-block w-100 imagem-carrossel" alt="...">
+              <img src="src/img/carousel-img2.jpg" class="d-block w-100 imagem-carrossel" alt="...">
               <div class="carousel-caption d-md-block h-50">
                 <h1 class="fonte-titulo display-5">Encontre o que você precisa facilmente!</h1>
               </div>
@@ -65,10 +90,18 @@
           </a>
         </div>
       </section>
+      
+      <section id="about">
+        <h1 class="text-center fonte-titulo texto-cor-especial pt-5">Liana Organizadora<a name="organizacoes"></a></h1>
+        <p class="text-center text-dark px-5">
+          Olá! Me chamo Liana Thompson e sou uma Carioca apaixonada por organização, vivendo em Vila Nova de Gaia desde 2019, 
+          ajudando você a organizar o seu espaço e ganhar mais praticidade em sua vida!
+        </p>
+      </section>  
 
-      <section id="titulo">
+      <section id="organizacoes">
         <h1 class="text-center fonte-titulo texto-cor-especial pt-5">Organizações realizadas com sucesso!<a name="organizacoes"></a></h1>
-        <p class="text-center text-dark pb-5">
+        <p class="text-center text-dark px-5">
             Com um espaço mais organizado você perceberá como irá ganhar tempo e praticidade para encontrar o que precisa,
             e identificar o que é necessário contribuindo para a sua economia.
         </p>
@@ -77,109 +110,192 @@
       <section class="container-fluid bg-light" id="cards">
         <div class="row justify-content-center">
           <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
-            <img src="src/img/organizado-cozinha.jpg" class="card-img-top card-posicao-imagem" alt="tigela com salada de abacate, vista superior">
+            <img src="src/img/org-cozinha-depois.jpg" class="card-img-top card-posicao-imagem" alt="armário de cozinha organizado.">
             <div class="card-body text-center text-center">
               <h5 class="card-title">Armário de Cozinha</h5>
-              <p class="card-text">Taças de Vinho, copos, pratos e talheres, equipamentos mais utilizados!</p>
-              <a href="#" class="btn botao-cor-especial">Veja a imagem</a>
+              <p class="card-text">Taças de vinho, copos, pratos e talheres, equipamentos mais utilizados!</p>
+              <a href="#" class="btn botao-cor-especial" data-toggle="modal" data-target="#modal-image-cozinha">Veja a imagem</a>
             </div>
           </article>
             
           <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
-            <img src="src/img/organizado-escritorio.jpg" class="card-img-top card-posicao-imagem" alt="tigela de mingau com kiwi, vista superior">
+            <img src="src/img/org-escritorio.jpg" class="card-img-top card-posicao-imagem" alt="escritório com equipamentos e cabos organizados.">
             <div class="card-body text-center text-center">
               <h5 class="card-title">Escritório</h5>
               <p class="card-text">Materiais de papelaria, cabos, adaptadores, pen-drives e equipamentos eletrônicos.</p>
-              <a href="#" class="btn botao-cor-especial">Veja a imagem</a>
+              <a href="#" class="btn botao-cor-especial" data-toggle="modal" data-target="#modal-image-escritorio">Veja a imagem</a>
+
+            </div>
           </article>
             
           <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
-            <img src="src/img/organizado-armario-roupa.jpg" class="card-img-top card-posicao-imagem" alt="prato com mix de vegetais e mão de pessoa adicionando azeite, vista superior">
+            <img src="src/img/org-armario-roupa.jpg" class="card-img-top card-posicao-imagem" alt="armário de roupa organizado.">
             <div class="card-body text-center text-center">
               <h5 class="card-title">Armário de Roupas</h5>
               <p class="card-text">Melhor aproveitamento do espaço, por categoria e frequência de uso.</p>
-              <a href="#" class="btn botao-cor-especial">Veja a imagem</a>
+              <a href="#" class="btn botao-cor-especial" data-toggle="modal" data-target="#modal-image-roupa">Veja a imagem</a>
             </div>
           </article>
             
           <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
-            <img src="src/img/organizado-sala.jpg" class="card-img-top card-posicao-imagem" alt="prato de salada de pimentões com alguns ingredientes ao lado, vista superior">
+            <img src="src/img/org-sala.jpg" class="card-img-top card-posicao-imagem" alt="armário de drinques da sala.">
             <div class="card-body text-center text-center">
               <h5 class="card-title">Sala</h5>
               <p class="card-text">Taças, copos e drinques prontos para qualquer comemoração!</p>
-              <a href="#" class="btn botao-cor-especial">Veja a imagem</a>
+              <a href="#" class="btn botao-cor-especial" data-toggle="modal" data-target="#modal-image-sala">Veja a imagem</a>
             </div>
           </article>
             
           <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
-            <img src="src/img/organizado-banheiro.jpg" class="card-img-top card-posicao-imagem" alt="tigela com salada de vegetais estilo oriental, vista de cima">
+            <img src="src/img/org-banheiro.jpg" class="card-img-top card-posicao-imagem" alt="armário do banheiro organizado.">
             <div class="card-body text-center text-center text-center  ">
               <h5 class="card-title">Banheiro</h5>
               <p class="card-text">Itens de higiene mais utilizados organizados ao alcance!</p>
-            <a href="#" class="btn botao-cor-especial">Veja a imagem</a>
+            <a href="#" class="btn botao-cor-especial" data-toggle="modal" data-target="#modal-image-banheiro">Veja a imagem</a>
             </div>
           </article>
           
           <article class="card borda-cor-especial card-largura p-0  m-4 col-12 col-md-4">
-            <img src="src/img/organizado-dispensa.jpg" class="card-img-top card-posicao-imagem" alt="tigela com beterrabas e dentes de alho assados em primeiro plano, com ingredientes ao fundo">
+            <img src="src/img/org-dispensa.jpg" class="card-img-top card-posicao-imagem" alt="armário da dispensa organizado.">
             <div class="card-body text-center">
               <h5 class="card-title">Dispensa</h5>
               <p class="card-text">Produtos, equipamentos e utensílios mais utilizados ao alcance!</p>
-              <a href="#" class="btn botao-cor-especial">Veja a imagem</a>
+              <a href="#" class="btn botao-cor-especial" data-toggle="modal" data-target="#modal-image-dispensa">Veja a imagem</a>
             </div>
           </article>
         </div>
       </section>
     </main>
-
-    <section id="about">
-      <h1 class="text-center fonte-titulo texto-cor-especial pt-5">Liana Organizadora<a name="organizacoes"></a></h1>
-      <p class="text-center text-dark pb-5">
-        Olá me chamo Liana Thompson e sou uma Carioca apaixonada por organização, vivendo em Vila Nova de Gaia desde 2019, 
-        ajudando você a organizar o seu espaço e ganhar mais praticidade em sua vida!
+   
+    <footer class="bg-dark p-3">
+      <p class="text-light m-0 text-center">  
+        contacto:<br><a class="text-light" href="mailto:liana@aliorganiza.com.br">liana@aliorganiza.com.br</a>
       </p>
-
-    </section>
-    
-    <footer class="bg-secondary p-3">
-      <p class="text-light m-0 text-center">contato: <a class="text-light" href="mailto:liana@aliorganiza.com.br">liana@aliorganiza.com.br</a>
-      </p>
+      <p class="text-light m-0 text-center">
+        <a href="https://www.instagram.com/ali.organiza/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFFFFF" class="bi bi-instagram text-center" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg>
+        </a>
+      </p> 
     </footer>
 
   <!-- Modal -->
-  <!-- Modal image-->
-  <div class="modal fade" 
-             id="modal-image"
-             tabindex="-1" 
-             role="dialog"
-             aria-labelledby="exampleModalLabel" 
-             aria-hidden="true">
-            <div class="modal-dialog" 
-                 role="document">
-                <div class="modal-content">
-                    <!-- Modal heading -->
-                    <div class="modal-header">
-                        <h5 class="modal-title" 
-                            id="exampleModalLabel">
-                          Organizado
-                      </h5>
-                        <button type="button" 
-                                class="close"
-                                data-dismiss="modal" 
-                                aria-label="Close">
-                            <span aria-hidden="true">
-                              ×
-                          </span>
-                        </button>
-                    </div>
-  
-                    <!-- Modal body with image -->
-                    <div class="modal-body">
-                        <img src="src/img/organizado-cozinha.jpg"/>
-                    </div>
-                </div>
-            </div>
+   <!-- Modal markup: https://getbootstrap.com/docs/4.4/components/modal/ -->
+
+  <div class="modal fade" id="modal-image-cozinha" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-label">Armário de Cozinha Organizado</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <!-- Carousel markup: https://getbootstrap.com/docs/4.4/components/carousel/ -->
+          <div id="carouselExample" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img class="d-block w-100" src="src/img/org-cozinha-antes.jpg"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="src/img/org-cozinha-depois.jpg"></div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span></a>
+              <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span></a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-image-escritorio" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-label">Escritório Organizado</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="d-block w-100" src="src/img/org-escritorio.jpg">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-image-roupa" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-label">Armário de roupa Organizado</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="d-block w-100" src="src/img/org-armario-roupa.jpg">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-image-sala" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-label">Armário da Sala Organizado</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="d-block w-100" src="src/img/org-sala.jpg">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-image-banheiro" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-label">Armário do banheiro Organizado</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="d-block w-100" src="src/img/org-banheiro.jpg">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-image-dispensa" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-label">Armário da dispensa Organizado</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="d-block w-100" src="src/img/org-dispensa.jpg">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -208,7 +324,7 @@
         </main>
         <footer class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-          <button type="button" class="btn botao-cor-especial">Enviar</button>
+          <button type="submit" class="btn botao-cor-especial">Enviar</button>
         </footer>
       </div>
     </div>

@@ -1,7 +1,7 @@
 .imagem-carrossel {
   object-fit: cover;
-  object-position: 0 70%;
-  height: 500px;
+  object-position: 0 45%;
+  height: 700px;
 }
 
 .fonte-titulo {
@@ -27,6 +27,6 @@
 
 .card-posicao-imagem {
   object-fit: cover;
-  object-position: 0 0;
+  object-position: 50% 50%;
   height: 200px;
 }

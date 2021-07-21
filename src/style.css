@@ -1,7 +1,7 @@
 .imagem-carrossel {
   object-fit: cover;
   object-position: 0 45%;
-  height: 700px;
+  height: 500px;
 }
 
 .fonte-titulo {
@@ -11,6 +11,17 @@
 .texto-cor-especial {
   color: darkred;
 }
+
+.image-largura{
+  max-width: 22rem;
+}
+
+.image-about {
+  object-fit: cover;
+  object-position: 30%;
+  height: auto;
+} 
+
 
 .botao-cor-especial {
   background-color: darkred;
